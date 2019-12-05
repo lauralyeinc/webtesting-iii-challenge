@@ -4,15 +4,15 @@ import React from 'react';
 import { render } from "@testing-library/react";
 import Dashboard from './Dashboard.js'; 
 
-// test("Shows Controls for the Dashboard of the gate", () => {
-//     const wrapper = render(<Dashboard />);
-//     const LockGate = wrapper.getByPlaceholderText(/'Lock Gate'/i);
-//     const CloseGate = wrapper.getByPlaceholderText(/'Close Gate'/i);
+test("Renders Dashboard", () => {
+    const wrapper = render(<Dashboard />);
+});
 
-//     expect(LockGate).toBeVisble(); 
-//     expect(CloseGate).toBeVisble();
-// });
+test(" Has locked and closed in the controls", () => {
+    const { getByText } = render(<Dashboard />);
 
-// test("Shows Controls for the Dashboard", async () => {
-//     const wrapper = render(<Dashboard />); 
-// });
+    // getByText('false')
+    
+})
+
+// done 

@@ -12,7 +12,6 @@ const Display = ({ closed, locked }) => {
   );
 };
 
-// test lines 9 and 10 
 
 Display.defaultProps = {    // test gate default 
   closed: false,

@@ -6,8 +6,7 @@ import { render } from "@testing-library/react";
 
 import Controls from "./Controls.js";
 
-test( "Controls are present", () => {
+test( "Controls renders", () => {
     const wrapper = render(<Controls />);
-
-    expect(wrapper).getByTestId();
 }); 
+
