@@ -5,8 +5,8 @@ import Controls from '../controls/Controls';
 
 class Dashboard extends React.Component {
   state = {
-    locked: false,
-    closed: false,
+    locked: false,    //unlocked     
+    closed: false,    // open 
   };
 
   render() {
@@ -15,7 +15,7 @@ class Dashboard extends React.Component {
     return (
       <>
         <Display locked={locked} closed={closed} />
-        <Controls
+        <Controls                  // test to show controls 
           locked={locked}
           closed={closed}
           toggleLocked={this.toggleLocked}
